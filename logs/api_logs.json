@@ -1,0 +1,119 @@
+[
+  {
+    "request_method": "GET",
+    "request_url": "/logs",
+    "request_body": "",
+    "response_code": 200,
+    "response_body": "{\"logs\":null}",
+    "created_at": "2025-01-21T08:20:19.287970282Z",
+    "request_id": "ccfaf098-606f-4267-9977-7c2fab494bf3"
+  },
+  {
+    "request_method": "GET",
+    "request_url": "/logs",
+    "request_body": "",
+    "response_code": 500,
+    "response_body": "{\"error\":\"Failed to fetch logs\"}",
+    "created_at": "2025-01-21T08:20:23.61440872Z",
+    "request_id": "a213f78f-905d-4e93-adb9-49d3772f03a4"
+  },
+  {
+    "request_method": "GET",
+    "request_url": "/logs",
+    "request_body": "",
+    "response_code": 500,
+    "response_body": "{\"error\":\"Failed to fetch logs\"}",
+    "created_at": "2025-01-21T08:21:08.377760031Z",
+    "request_id": "2c3a435f-5e08-404f-bc24-88cadb7c88f7"
+  },
+  {
+    "request_method": "GET",
+    "request_url": "/logs",
+    "request_body": "",
+    "response_code": 500,
+    "response_body": "{\"error\":\"Failed to fetch logs\"}",
+    "created_at": "2025-01-21T08:21:09.373213522Z",
+    "request_id": "7e61629f-8bf5-4d10-afc0-e0fd82b140ed"
+  },
+  {
+    "request_method": "GET",
+    "request_url": "/logs",
+    "request_body": "",
+    "response_code": 500,
+    "response_body": "{\"error\":\"Failed to fetch logs\"}",
+    "created_at": "2025-01-21T08:21:10.486031392Z",
+    "request_id": "fc457fbf-515b-44a2-9578-1d3712409df4"
+  },
+  {
+    "request_method": "GET",
+    "request_url": "/logs",
+    "request_body": "",
+    "response_code": 500,
+    "response_body": "{\"error\":\"Failed to fetch logs\"}",
+    "created_at": "2025-01-21T08:21:11.588790072Z",
+    "request_id": "f2b024f5-0f87-4fe0-a190-c173242bd865"
+  },
+  {
+    "request_method": "GET",
+    "request_url": "/logs",
+    "request_body": "",
+    "response_code": 500,
+    "response_body": "{\"error\":\"Failed to fetch logs\"}",
+    "created_at": "2025-01-21T08:22:05.914398724Z",
+    "request_id": "f94a66b3-215c-494b-8974-9432749a9b1d"
+  },
+  {
+    "request_method": "GET",
+    "request_url": "/logs",
+    "request_body": "",
+    "response_code": 500,
+    "response_body": "{\"error\":\"Failed to fetch logs\"}",
+    "created_at": "2025-01-21T08:22:08.620214295Z",
+    "request_id": "b6922fe8-726e-49f6-bf20-e18e5a800dd4"
+  },
+  {
+    "request_method": "GET",
+    "request_url": "/logs",
+    "request_body": "",
+    "response_code": 500,
+    "response_body": "{\"error\":\"Failed to fetch logs\"}",
+    "created_at": "2025-01-21T08:23:03.561005051Z",
+    "request_id": "2908b2de-fe6f-4a88-b61f-5280ca0cdc2b"
+  },
+  {
+    "request_method": "GET",
+    "request_url": "/logs",
+    "request_body": "",
+    "response_code": 200,
+    "response_body": "{\"logs\":[{\"request_method\":\"GET\",\"request_url\":\"/logs\",\"request_body\":\"\",\"response_code\":200,\"response_body\":\"{\\\"logs\\\":null}\",\"created_at\":\"2025-01-21T08:20:19.287970282Z\",\"request_id\":\"ccfaf098-606f-4267-9977-7c2fab494bf3\"},{\"request_method\":\"GET\",\"request_url\":\"/logs\",\"request_body\":\"\",\"response_code\":500,\"response_body\":\"{\\\"error\\\":\\\"Failed to fetch logs\\\"}\",\"created_at\":\"2025-01-21T08:20:23.61440872Z\",\"request_id\":\"a213f78f-905d-4e93-adb9-49d3772f03a4\"},{\"request_method\":\"GET\",\"request_url\":\"/logs\",\"request_body\":\"\",\"response_code\":500,\"response_body\":\"{\\\"error\\\":\\\"Failed to fetch logs\\\"}\",\"created_at\":\"2025-01-21T08:21:08.377760031Z\",\"request_id\":\"2c3a435f-5e08-404f-bc24-88cadb7c88f7\"},{\"request_method\":\"GET\",\"request_url\":\"/logs\",\"request_body\":\"\",\"response_code\":500,\"response_body\":\"{\\\"error\\\":\\\"Failed to fetch logs\\\"}\",\"created_at\":\"2025-01-21T08:21:09.373213522Z\",\"request_id\":\"7e61629f-8bf5-4d10-afc0-e0fd82b140ed\"},{\"request_method\":\"GET\",\"request_url\":\"/logs\",\"request_body\":\"\",\"response_code\":500,\"response_body\":\"{\\\"error\\\":\\\"Failed to fetch logs\\\"}\",\"created_at\":\"2025-01-21T08:21:10.486031392Z\",\"request_id\":\"fc457fbf-515b-44a2-9578-1d3712409df4\"},{\"request_method\":\"GET\",\"request_url\":\"/logs\",\"request_body\":\"\",\"response_code\":500,\"response_body\":\"{\\\"error\\\":\\\"Failed to fetch logs\\\"}\",\"created_at\":\"2025-01-21T08:21:11.588790072Z\",\"request_id\":\"f2b024f5-0f87-4fe0-a190-c173242bd865\"},{\"request_method\":\"GET\",\"request_url\":\"/logs\",\"request_body\":\"\",\"response_code\":500,\"response_body\":\"{\\\"error\\\":\\\"Failed to fetch logs\\\"}\",\"created_at\":\"2025-01-21T08:22:05.914398724Z\",\"request_id\":\"f94a66b3-215c-494b-8974-9432749a9b1d\"},{\"request_method\":\"GET\",\"request_url\":\"/logs\",\"request_body\":\"\",\"response_code\":500,\"response_body\":\"{\\\"error\\\":\\\"Failed to fetch logs\\\"}\",\"created_at\":\"2025-01-21T08:22:08.620214295Z\",\"request_id\":\"b6922fe8-726e-49f6-bf20-e18e5a800dd4\"},{\"request_method\":\"GET\",\"request_url\":\"/logs\",\"request_body\":\"\",\"response_code\":500,\"response_body\":\"{\\\"error\\\":\\\"Failed to fetch logs\\\"}\",\"created_at\":\"2025-01-21T08:23:03.561005051Z\",\"request_id\":\"2908b2de-fe6f-4a88-b61f-5280ca0cdc2b\"}]}",
+    "created_at": "2025-01-21T08:25:26.391377567Z",
+    "request_id": "b116cc03-22ca-4863-9125-e0a65def1ef6"
+  },
+  {
+    "request_method": "GET",
+    "request_url": "/logs",
+    "request_body": "",
+    "response_code": 200,
+    "response_body": "{\"logs\":[{\"request_method\":\"GET\",\"request_url\":\"/logs\",\"request_body\":\"\",\"response_code\":200,\"response_body\":\"{\\\"logs\\\":null}\",\"created_at\":\"2025-01-21T08:20:19.287970282Z\",\"request_id\":\"ccfaf098-606f-4267-9977-7c2fab494bf3\"},{\"request_method\":\"GET\",\"request_url\":\"/logs\",\"request_body\":\"\",\"response_code\":500,\"response_body\":\"{\\\"error\\\":\\\"Failed to fetch logs\\\"}\",\"created_at\":\"2025-01-21T08:20:23.61440872Z\",\"request_id\":\"a213f78f-905d-4e93-adb9-49d3772f03a4\"},{\"request_method\":\"GET\",\"request_url\":\"/logs\",\"request_body\":\"\",\"response_code\":500,\"response_body\":\"{\\\"error\\\":\\\"Failed to fetch logs\\\"}\",\"created_at\":\"2025-01-21T08:21:08.377760031Z\",\"request_id\":\"2c3a435f-5e08-404f-bc24-88cadb7c88f7\"},{\"request_method\":\"GET\",\"request_url\":\"/logs\",\"request_body\":\"\",\"response_code\":500,\"response_body\":\"{\\\"error\\\":\\\"Failed to fetch logs\\\"}\",\"created_at\":\"2025-01-21T08:21:09.373213522Z\",\"request_id\":\"7e61629f-8bf5-4d10-afc0-e0fd82b140ed\"},{\"request_method\":\"GET\",\"request_url\":\"/logs\",\"request_body\":\"\",\"response_code\":500,\"response_body\":\"{\\\"error\\\":\\\"Failed to fetch logs\\\"}\",\"created_at\":\"2025-01-21T08:21:10.486031392Z\",\"request_id\":\"fc457fbf-515b-44a2-9578-1d3712409df4\"},{\"request_method\":\"GET\",\"request_url\":\"/logs\",\"request_body\":\"\",\"response_code\":500,\"response_body\":\"{\\\"error\\\":\\\"Failed to fetch logs\\\"}\",\"created_at\":\"2025-01-21T08:21:11.588790072Z\",\"request_id\":\"f2b024f5-0f87-4fe0-a190-c173242bd865\"},{\"request_method\":\"GET\",\"request_url\":\"/logs\",\"request_body\":\"\",\"response_code\":500,\"response_body\":\"{\\\"error\\\":\\\"Failed to fetch logs\\\"}\",\"created_at\":\"2025-01-21T08:22:05.914398724Z\",\"request_id\":\"f94a66b3-215c-494b-8974-9432749a9b1d\"},{\"request_method\":\"GET\",\"request_url\":\"/logs\",\"request_body\":\"\",\"response_code\":500,\"response_body\":\"{\\\"error\\\":\\\"Failed to fetch logs\\\"}\",\"created_at\":\"2025-01-21T08:22:08.620214295Z\",\"request_id\":\"b6922fe8-726e-49f6-bf20-e18e5a800dd4\"},{\"request_method\":\"GET\",\"request_url\":\"/logs\",\"request_body\":\"\",\"response_code\":500,\"response_body\":\"{\\\"error\\\":\\\"Failed to fetch logs\\\"}\",\"created_at\":\"2025-01-21T08:23:03.561005051Z\",\"request_id\":\"2908b2de-fe6f-4a88-b61f-5280ca0cdc2b\"},{\"request_method\":\"GET\",\"request_url\":\"/logs\",\"request_body\":\"\",\"response_code\":200,\"response_body\":\"{\\\"logs\\\":[{\\\"request_method\\\":\\\"GET\\\",\\\"request_url\\\":\\\"/logs\\\",\\\"request_body\\\":\\\"\\\",\\\"response_code\\\":200,\\\"response_body\\\":\\\"{\\\\\\\"logs\\\\\\\":null}\\\",\\\"created_at\\\":\\\"2025-01-21T08:20:19.287970282Z\\\",\\\"request_id\\\":\\\"ccfaf098-606f-4267-9977-7c2fab494bf3\\\"},{\\\"request_method\\\":\\\"GET\\\",\\\"request_url\\\":\\\"/logs\\\",\\\"request_body\\\":\\\"\\\",\\\"response_code\\\":500,\\\"response_body\\\":\\\"{\\\\\\\"error\\\\\\\":\\\\\\\"Failed to fetch logs\\\\\\\"}\\\",\\\"created_at\\\":\\\"2025-01-21T08:20:23.61440872Z\\\",\\\"request_id\\\":\\\"a213f78f-905d-4e93-adb9-49d3772f03a4\\\"},{\\\"request_method\\\":\\\"GET\\\",\\\"request_url\\\":\\\"/logs\\\",\\\"request_body\\\":\\\"\\\",\\\"response_code\\\":500,\\\"response_body\\\":\\\"{\\\\\\\"error\\\\\\\":\\\\\\\"Failed to fetch logs\\\\\\\"}\\\",\\\"created_at\\\":\\\"2025-01-21T08:21:08.377760031Z\\\",\\\"request_id\\\":\\\"2c3a435f-5e08-404f-bc24-88cadb7c88f7\\\"},{\\\"request_method\\\":\\\"GET\\\",\\\"request_url\\\":\\\"/logs\\\",\\\"request_body\\\":\\\"\\\",\\\"response_code\\\":500,\\\"response_body\\\":\\\"{\\\\\\\"error\\\\\\\":\\\\\\\"Failed to fetch logs\\\\\\\"}\\\",\\\"created_at\\\":\\\"2025-01-21T08:21:09.373213522Z\\\",\\\"request_id\\\":\\\"7e61629f-8bf5-4d10-afc0-e0fd82b140ed\\\"},{\\\"request_method\\\":\\\"GET\\\",\\\"request_url\\\":\\\"/logs\\\",\\\"request_body\\\":\\\"\\\",\\\"response_code\\\":500,\\\"response_body\\\":\\\"{\\\\\\\"error\\\\\\\":\\\\\\\"Failed to fetch logs\\\\\\\"}\\\",\\\"created_at\\\":\\\"2025-01-21T08:21:10.486031392Z\\\",\\\"request_id\\\":\\\"fc457fbf-515b-44a2-9578-1d3712409df4\\\"},{\\\"request_method\\\":\\\"GET\\\",\\\"request_url\\\":\\\"/logs\\\",\\\"request_body\\\":\\\"\\\",\\\"response_code\\\":500,\\\"response_body\\\":\\\"{\\\\\\\"error\\\\\\\":\\\\\\\"Failed to fetch logs\\\\\\\"}\\\",\\\"created_at\\\":\\\"2025-01-21T08:21:11.588790072Z\\\",\\\"request_id\\\":\\\"f2b024f5-0f87-4fe0-a190-c173242bd865\\\"},{\\\"request_method\\\":\\\"GET\\\",\\\"request_url\\\":\\\"/logs\\\",\\\"request_body\\\":\\\"\\\",\\\"response_code\\\":500,\\\"response_body\\\":\\\"{\\\\\\\"error\\\\\\\":\\\\\\\"Failed to fetch logs\\\\\\\"}\\\",\\\"created_at\\\":\\\"2025-01-21T08:22:05.914398724Z\\\",\\\"request_id\\\":\\\"f94a66b3-215c-494b-8974-9432749a9b1d\\\"},{\\\"request_method\\\":\\\"GET\\\",\\\"request_url\\\":\\\"/logs\\\",\\\"request_body\\\":\\\"\\\",\\\"response_code\\\":500,\\\"response_body\\\":\\\"{\\\\\\\"error\\\\\\\":\\\\\\\"Failed to fetch logs\\\\\\\"}\\\",\\\"created_at\\\":\\\"2025-01-21T08:22:08.620214295Z\\\",\\\"request_id\\\":\\\"b6922fe8-726e-49f6-bf20-e18e5a800dd4\\\"},{\\\"request_method\\\":\\\"GET\\\",\\\"request_url\\\":\\\"/logs\\\",\\\"request_body\\\":\\\"\\\",\\\"response_code\\\":500,\\\"response_body\\\":\\\"{\\\\\\\"error\\\\\\\":\\\\\\\"Failed to fetch logs\\\\\\\"}\\\",\\\"created_at\\\":\\\"2025-01-21T08:23:03.561005051Z\\\",\\\"request_id\\\":\\\"2908b2de-fe6f-4a88-b61f-5280ca0cdc2b\\\"}]}\",\"created_at\":\"2025-01-21T08:25:26.391377567Z\",\"request_id\":\"b116cc03-22ca-4863-9125-e0a65def1ef6\"}]}",
+    "created_at": "2025-01-21T08:28:03.950124355Z",
+    "request_id": "d95cdaa2-3def-4b0e-bb38-83093508f8eb"
+  },
+  {
+    "request_method": "GET",
+    "request_url": "/users",
+    "request_body": "",
+    "response_code": 200,
+    "response_body": "{\"page_n0\":2,\"page_size\":10,\"users\":[{\"ID\":4,\"FirstName\":\"Robert\",\"LastName\":\"Williams\",\"Email\":\"user127939534@example.com\",\"Age\":\"42\",\"Gender\":\"Male\",\"Department\":\"Engineering\",\"Company\":\"BizConsult\",\"Salary\":\"99278\",\"DateJoined\":\"2024-11-27\",\"IsActive\":\"false\"},{\"ID\":4,\"FirstName\":\"Laura\",\"LastName\":\"Lopez\",\"Email\":\"user179509094@example.com\",\"Age\":\"20\",\"Gender\":\"Other\",\"Department\":\"Support\",\"Company\":\"DesignHub\",\"Salary\":\"100568\",\"DateJoined\":\"2024-10-25\",\"IsActive\":\"true\"},{\"ID\":5,\"FirstName\":\"Laura\",\"LastName\":\"Smith\",\"Email\":\"user5@example.com\",\"Age\":\"68\",\"Gender\":\"Male\",\"Department\":\"Research\",\"Company\":\"DesignHub\",\"Salary\":\"50716\",\"DateJoined\":\"2024-12-07\",\"IsActive\":\"true\"},{\"ID\":5,\"FirstName\":\"Robert\",\"LastName\":\"Miller\",\"Email\":\"user230549605@example.com\",\"Age\":\"66\",\"Gender\":\"Male\",\"Department\":\"IT\",\"Company\":\"DesignHub\",\"Salary\":\"99101\",\"DateJoined\":\"2024-10-17\",\"IsActive\":\"true\"},{\"ID\":5,\"FirstName\":\"John\",\"LastName\":\"Brown\",\"Email\":\"user137258125@example.com\",\"Age\":\"72\",\"Gender\":\"Other\",\"Department\":\"Engineering\",\"Company\":\"DevStudio\",\"Salary\":\"44237\",\"DateJoined\":\"2024-11-29\",\"IsActive\":\"false\"},{\"ID\":5,\"FirstName\":\"David\",\"LastName\":\"Martinez\",\"Email\":\"user156953825@example.com\",\"Age\":\"60\",\"Gender\":\"Male\",\"Department\":\"Sales\",\"Company\":\"TechCorp\",\"Salary\":\"99630\",\"DateJoined\":\"2024-09-02\",\"IsActive\":\"false\"},{\"ID\":5,\"FirstName\":\"Emily\",\"LastName\":\"Miller\",\"Email\":\"user63453745@example.com\",\"Age\":\"69\",\"Gender\":\"Female\",\"Department\":\"Support\",\"Company\":\"DesignHub\",\"Salary\":\"114357\",\"DateJoined\":\"2024-09-25\",\"IsActive\":\"true\"},{\"ID\":5,\"FirstName\":\"Jane\",\"LastName\":\"Williams\",\"Email\":\"user237962135@example.com\",\"Age\":\"64\",\"Gender\":\"Male\",\"Department\":\"Human Resources\",\"Company\":\"DataPros\",\"Salary\":\"100959\",\"DateJoined\":\"2024-08-29\",\"IsActive\":\"true\"},{\"ID\":5,\"FirstName\":\"Emily\",\"LastName\":\"Williams\",\"Email\":\"user165954635@example.com\",\"Age\":\"71\",\"Gender\":\"Female\",\"Department\":\"Human Resources\",\"Company\":\"DataPros\",\"Salary\":\"114019\",\"DateJoined\":\"2024-12-16\",\"IsActive\":\"true\"},{\"ID\":5,\"FirstName\":\"Chris\",\"LastName\":\"Jones\",\"Email\":\"user105914035@example.com\",\"Age\":\"29\",\"Gender\":\"Male\",\"Department\":\"Engineering\",\"Company\":\"DataPros\",\"Salary\":\"118193\",\"DateJoined\":\"2024-11-29\",\"IsActive\":\"true\"}]}",
+    "created_at": "2025-01-21T08:28:12.920707355Z",
+    "request_id": "cbe8459f-38bf-4748-a4dd-8f1402541634"
+  },
+  {
+    "request_method": "GET",
+    "request_url": "/users",
+    "request_body": "",
+    "response_code": 200,
+    "response_body": "{\"page_n0\":2,\"page_size\":10,\"users\":[{\"ID\":4,\"FirstName\":\"Robert\",\"LastName\":\"Williams\",\"Email\":\"user127939534@example.com\",\"Age\":\"42\",\"Gender\":\"Male\",\"Department\":\"Engineering\",\"Company\":\"BizConsult\",\"Salary\":\"99278\",\"DateJoined\":\"2024-11-27\",\"IsActive\":\"false\"},{\"ID\":4,\"FirstName\":\"Laura\",\"LastName\":\"Lopez\",\"Email\":\"user179509094@example.com\",\"Age\":\"20\",\"Gender\":\"Other\",\"Department\":\"Support\",\"Company\":\"DesignHub\",\"Salary\":\"100568\",\"DateJoined\":\"2024-10-25\",\"IsActive\":\"true\"},{\"ID\":5,\"FirstName\":\"David\",\"LastName\":\"Martinez\",\"Email\":\"user156953825@example.com\",\"Age\":\"60\",\"Gender\":\"Male\",\"Department\":\"Sales\",\"Company\":\"TechCorp\",\"Salary\":\"99630\",\"DateJoined\":\"2024-09-02\",\"IsActive\":\"false\"},{\"ID\":5,\"FirstName\":\"Jane\",\"LastName\":\"Williams\",\"Email\":\"user237962135@example.com\",\"Age\":\"64\",\"Gender\":\"Male\",\"Department\":\"Human Resources\",\"Company\":\"DataPros\",\"Salary\":\"100959\",\"DateJoined\":\"2024-08-29\",\"IsActive\":\"true\"},{\"ID\":5,\"FirstName\":\"Robert\",\"LastName\":\"Miller\",\"Email\":\"user230549605@example.com\",\"Age\":\"66\",\"Gender\":\"Male\",\"Department\":\"IT\",\"Company\":\"DesignHub\",\"Salary\":\"99101\",\"DateJoined\":\"2024-10-17\",\"IsActive\":\"true\"},{\"ID\":5,\"FirstName\":\"Chris\",\"LastName\":\"Jones\",\"Email\":\"user105914035@example.com\",\"Age\":\"29\",\"Gender\":\"Male\",\"Department\":\"Engineering\",\"Company\":\"DataPros\",\"Salary\":\"118193\",\"DateJoined\":\"2024-11-29\",\"IsActive\":\"true\"},{\"ID\":5,\"FirstName\":\"John\",\"LastName\":\"Brown\",\"Email\":\"user137258125@example.com\",\"Age\":\"72\",\"Gender\":\"Other\",\"Department\":\"Engineering\",\"Company\":\"DevStudio\",\"Salary\":\"44237\",\"DateJoined\":\"2024-11-29\",\"IsActive\":\"false\"},{\"ID\":5,\"FirstName\":\"Laura\",\"LastName\":\"Smith\",\"Email\":\"user5@example.com\",\"Age\":\"68\",\"Gender\":\"Male\",\"Department\":\"Research\",\"Company\":\"DesignHub\",\"Salary\":\"50716\",\"DateJoined\":\"2024-12-07\",\"IsActive\":\"true\"},{\"ID\":5,\"FirstName\":\"Emily\",\"LastName\":\"Williams\",\"Email\":\"user165954635@example.com\",\"Age\":\"71\",\"Gender\":\"Female\",\"Department\":\"Human Resources\",\"Company\":\"DataPros\",\"Salary\":\"114019\",\"DateJoined\":\"2024-12-16\",\"IsActive\":\"true\"},{\"ID\":5,\"FirstName\":\"Emily\",\"LastName\":\"Miller\",\"Email\":\"user63453745@example.com\",\"Age\":\"69\",\"Gender\":\"Female\",\"Department\":\"Support\",\"Company\":\"DesignHub\",\"Salary\":\"114357\",\"DateJoined\":\"2024-09-25\",\"IsActive\":\"true\"}]}",
+    "created_at": "2025-01-21T17:56:41.526340823Z",
+    "request_id": "5d798594-d27b-4870-bae8-2c2f008ea3c8"
+  }
+]

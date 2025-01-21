@@ -1,0 +1,54 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+    container_name: mini_project
+    depends_on:
+      - postgres
+    command: ["go", "run", "/app/main.go", ]
+    volumes:
+      - C:/Users/deepak.ag/Desktop/MiniProject1:/app
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_USER: DeepakAgrawal
+      DB_PASSWORD: 03July2003@@
+      DB_NAME: CSVDB
+    ports:
+    - "8081:8081"
+    deploy:
+      resources:
+        limits:
+          memory: 2g
+          cpus: "2.0"
+
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    environment:
+      POSTGRES_USER: DeepakAgrawal
+      POSTGRES_PASSWORD: 03July2003@@
+      POSTGRES_DB: CSVDB
+      PGCONNECT_TIMEOUT:   3000  # Set the connection timeout to 300 seconds
+      PGSTATEMENT_TIMEOUT: 3000  # Set statement timeout to 300 seconds
+      POSTGRES_MAX_CONNECTIONS: 200
+
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: deepakadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: deepakgoyanka91@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80"
+
+volumes:
+  postgres-data: 
