@@ -1,7 +1,7 @@
 package utils
 
 import (
-	"Mymodule/models"
+	"Mymodule/mymodule/models"
 	"fmt"
 	"io"
 	"log"

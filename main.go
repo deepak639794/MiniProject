@@ -1,9 +1,10 @@
 package main
 
 import (
-	"Mymodule/middleware"
-	"Mymodule/models"
-	"Mymodule/utils"
+	"Mymodule/mymodule/middleware"
+	"Mymodule/mymodule/models"
+	"Mymodule/mymodule/routes"
+	"Mymodule/mymodule/utils"
 	"log"
 
 	"github.com/gin-gonic/gin"
@@ -12,7 +13,8 @@ import (
 )
 
 var (
-	db *gorm.DB
+	db        *gorm.DB
+	logReader utils.LogReader
 )
 
 func main() {
@@ -32,23 +34,8 @@ func main() {
 	r.MaxMultipartMemory = 30 << 30 // 30 GB
 
 	r.Use(middleware.LogRequestResponse())
+	logReader = utils.NewLogReader()
+	routes.SetupRoutes(r, logReader, db)
 
-	r.GET("/hello", func(ctx *gin.Context) {
-		ctx.JSON(200, gin.H{"message": "hello sir"})
-	})
-	r.GET("/logs", func(c *gin.Context) {
-		// Read and return logs from the file
-		logs, err := utils.ReadLogsFromFile()
-		if err != nil {
-			c.JSON(500, gin.H{"error": "Failed to fetch logs"})
-			return
-		}
-		c.JSON(200, gin.H{"logs": logs})
-	})
-
-	r.POST("/uploadFile", utils.UploadFileDB)
-	r.GET("/users", func(ctx *gin.Context) {
-		utils.FetchUsers(db, ctx)
-	})
 	r.Run(":8081")
 }

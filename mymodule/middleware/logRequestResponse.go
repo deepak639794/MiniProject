@@ -2,7 +2,7 @@
 package middleware
 
 import (
-	"Mymodule/models"
+	"Mymodule/mymodule/models"
 	"bytes"
 	"encoding/json"
 
@@ -45,7 +45,7 @@ func LogRequestResponse() gin.HandlerFunc {
 
 		// After request processing: capture response status and body
 		responseCode := c.Writer.Status()
-		responseBody := respBody.String()
+		// responseBody := respBody.String()
 
 		// Create the log entry
 		logEntry := models.ApiLog{
@@ -53,8 +53,8 @@ func LogRequestResponse() gin.HandlerFunc {
 			RequestURL:    url,
 			RequestBody:   requestBody,
 			ResponseCode:  responseCode,
-			ResponseBody:  responseBody,
-			CreatedAt:     start,
+			ResponseBody:  "Success",
+			CreatedAt:     start.String(),
 			RequestID:     requestID,
 		}
 
@@ -82,9 +82,9 @@ func (w *CustomResponseWriter) Write(p []byte) (int, error) {
 }
 func writeLogToFile(logEntry models.ApiLog) {
 	// Open the log file in read-write mode, or create it if it doesn't exist
-	logFile, err := os.OpenFile("./logs/api_logs.json", os.O_RDWR|os.O_CREATE, 0644)
+	logFile, err := os.OpenFile("C:/Users/deepak.ag/Desktop/MiniProject1/mymodule/logs/api_logs.json", os.O_RDWR|os.O_CREATE, 0644)
 	if err != nil {
-		log.Fatalf("Error opening log file: %v", err)
+		log.Fatalf("Error opening log file11: %v", err)
 	}
 	defer logFile.Close()
 
@@ -123,55 +123,37 @@ func writeLogToFile(logEntry models.ApiLog) {
 	log.Printf("Log entry successfully appended to the file.")
 }
 
-// writeLogToFile writes the log entry to a file in JSON format
-// func writeLogToFile(logEntry models.ApiLog) {
-// 	// Open log file (append mode)
-// 	logFile, err := os.OpenFile("api_logs.json", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
-// 	if err != nil {
-// 		log.Fatalf("Error opening log file: %v", err)
-// 	}
-// 	defer logFile.Close()
-
-// 	// Convert log entry to JSON
-// 	logData, err := json.Marshal(logEntry)
-// 	if err != nil {
-// 		log.Printf("Error marshalling log entry: %v", err)
-// 		return
-// 	}
-
-//		// Write the log entry to the file followed by a newline
-//		logFile.Write(append(logData, '\n'))
-//	}
 func wrapLogsInArray() {
 	// Read the existing logs from the file
-	logFile, err := os.OpenFile("./logs/api_logs.json", os.O_RDWR, 0644)
+	logFile, err := os.OpenFile("C:/Users/deepak.ag/Desktop/MiniProject1/mymodule/logs/api_logs.json", os.O_RDWR, 0644)
 	if err != nil {
-		log.Fatalf("Error opening log file: %v", err)
+		log.Fatalf("Error opening log file1: %v", err)
 	}
 	defer logFile.Close()
 
-	// Read the file content
+	// Read the file content into a slice of ApiLog
 	var logs []models.ApiLog
 	decoder := json.NewDecoder(logFile)
-	for {
-		var logEntry models.ApiLog
-		if err := decoder.Decode(&logEntry); err != nil {
-			if err.Error() == "EOF" {
-				break // End of file
-			}
-			log.Printf("Error decoding log entry: %v", err)
+
+	// Decode the root JSON array into the logs slice
+	if err := decoder.Decode(&logs); err != nil {
+		if err.Error() != "EOF" {
+			log.Printf("Error decoding log entries: %v", err)
 			return
 		}
-		logs = append(logs, logEntry)
 	}
 
-	// Rewrite the logs to the file in JSON array format
+	// Clear the file before writing the new content
 	logFile.Truncate(0) // Clear the file
 	logFile.Seek(0, 0)  // Reset the file pointer
 
-	// Wrap logs in a JSON array
-	logsArray := []models.ApiLog(logs)
+	// Now rewrite the logs to the file in JSON array format
 	enc := json.NewEncoder(logFile)
 	enc.SetIndent("", "  ")
-	enc.Encode(logsArray)
+
+	// Write the logs as an array in the JSON file
+	if err := enc.Encode(logs); err != nil {
+		log.Printf("Error encoding logs back to file: %v", err)
+		return
+	}
 }
