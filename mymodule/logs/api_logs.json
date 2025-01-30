@@ -115,5 +115,68 @@
     "response_body": "Success",
     "created_at": "2025-01-30 01:03:33.6044027 +0530 IST m=+0.015566201",
     "request_id": "ad50de66-273d-4e3c-a5f9-e656bff07fd0"
+  },
+  {
+    "request_method": "GET",
+    "request_url": "/logs",
+    "request_body": "",
+    "response_code": 200,
+    "response_body": "Success",
+    "created_at": "2025-01-30 05:14:17.343755003 +0000 UTC m=+3.725165691",
+    "request_id": "4466aaa8-0fa8-4199-965f-24543bd8c6a4"
+  },
+  {
+    "request_method": "GET",
+    "request_url": "/logs",
+    "request_body": "",
+    "response_code": 200,
+    "response_body": "Success",
+    "created_at": "2025-01-30 05:15:11.297489134 +0000 UTC m=+10.979819300",
+    "request_id": "24cb0493-d535-4f6b-a905-6e77eb88da98"
+  },
+  {
+    "request_method": "GET",
+    "request_url": "/logs",
+    "request_body": "",
+    "response_code": 200,
+    "response_body": "Success",
+    "created_at": "2025-01-30 05:15:11.297420179 +0000 UTC m=+10.979750342",
+    "request_id": "aaf0bfa4-3a49-428f-ba6d-03bd2d229fbd"
+  },
+  {
+    "request_method": "POST",
+    "request_url": "/users",
+    "request_body": "----------------------------819638902605081598776506\r\nContent-Disposition: form-data; name=\"User_data\"; filename=\"\"\r\n\r\n\r\n----------------------------819638902605081598776506--\r\n",
+    "response_code": 404,
+    "response_body": "Success",
+    "created_at": "2025-01-30 05:16:12.234221194 +0000 UTC m=+71.920321445",
+    "request_id": "f7510e34-5bb2-4fd7-9db4-182c551b97f1"
+  },
+  {
+    "request_method": "POST",
+    "request_url": "/users",
+    "request_body": "----------------------------819638902605081598776506\r\nContent-Disposition: form-data; name=\"User_data\"; filename=\"\"\r\n\r\n\r\n----------------------------819638902605081598776506--\r\n",
+    "response_code": 404,
+    "response_body": "Success",
+    "created_at": "2025-01-30 05:16:12.234131665 +0000 UTC m=+71.920231900",
+    "request_id": "32f2afa3-374a-40cc-964d-b69d56b1b00e"
+  },
+  {
+    "request_method": "GET",
+    "request_url": "/users",
+    "request_body": "----------------------------427178260943554794244256\r\nContent-Disposition: form-data; name=\"User_data\"; filename=\"\"\r\n\r\n\r\n----------------------------427178260943554794244256--\r\n",
+    "response_code": 200,
+    "response_body": "Success",
+    "created_at": "2025-01-30 05:17:02.273300654 +0000 UTC m=+121.961426471",
+    "request_id": "fe3d311c-9fbc-4c30-8e9d-5c036ce2ba3a"
+  },
+  {
+    "request_method": "GET",
+    "request_url": "/users",
+    "request_body": "----------------------------427178260943554794244256\r\nContent-Disposition: form-data; name=\"User_data\"; filename=\"\"\r\n\r\n\r\n----------------------------427178260943554794244256--\r\n",
+    "response_code": 200,
+    "response_body": "Success",
+    "created_at": "2025-01-30 05:17:02.273254785 +0000 UTC m=+121.961380608",
+    "request_id": "f4e5d88b-b055-4441-9b3c-a0e66fe2de1e"
   }
 ]

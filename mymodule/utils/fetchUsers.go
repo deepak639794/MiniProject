@@ -11,7 +11,7 @@ import (
 )
 
 func FetchUsers(db *gorm.DB, c *gin.Context) {
-	fmt.Println("inside the fetch user")
+
 	pageSizeStr := c.DefaultQuery("page_size", "100")
 	pageStr := c.DefaultQuery("page_no", "")
 

@@ -5,7 +5,6 @@ import (
 
 	"Mymodule/mymodule/middleware"
 	"Mymodule/mymodule/utils"
-	"fmt"
 
 	// "Mymodule/mymodule/utils"
 
@@ -24,7 +23,6 @@ func SetupRoutes(r *gin.Engine, logReader utils.LogReader, db *gorm.DB) {
 	})
 
 	r.GET("/logs", func(c *gin.Context) {
-		fmt.Println("#############inside the  logs function ")
 		logs, err := logReader.ReadLogsFromFile()
 		if err != nil {
 			c.JSON(500, gin.H{"error": "Failed to fetch logs"})

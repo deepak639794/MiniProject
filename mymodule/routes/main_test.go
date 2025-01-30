@@ -37,23 +37,6 @@ func TestHelloEndpoint(t *testing.T) {
 	assert.JSONEq(t, `{"message": "hello sir"}`, w.Body.String())
 }
 
-// func TestFetchUsersEndpoint(t *testing.T) {
-// 	r := gin.Default()
-
-// 	routes.SetupRoutes(r, nil)
-
-// 	req, _ := http.NewRequest("GET", "/hello", nil)
-// 	w := httptest.NewRecorder()
-
-// 	r.ServeHTTP(w, req)
-
-// 	assert.Equal(t, http.StatusOK, w.Code)
-
-// 	// Check if the response body matches the expected output
-// 	expectedResponse := `{"message": "hello sir"}`
-// 	assert.JSONEq(t, expectedResponse, w.Body.String())
-// }
-
 type MockUtils struct {
 	mock.Mock
 }

@@ -58,14 +58,14 @@ func UploadFileDB(ctx *gin.Context) {
 	chunkSize := int64(10 * 1024 * 1024) // 10 MB chunks
 	batchSize := 5000                    // Batch size for database inserts
 
-	if err := uploadFileToDB(file, db, chunkSize, batchSize, fileSize); err != nil {
+	if err := upload(file, db, chunkSize, batchSize, fileSize); err != nil {
 		ctx.JSON(http.StatusInternalServerError, gin.H{"error": "Error processing file", "details": err.Error()})
 		return
 	}
 
 	ctx.JSON(http.StatusOK, gin.H{"message": "File uploaded and processed successfully."})
 }
-func uploadFileToDB(file multipart.File, db *gorm.DB, chunkSize int64, batchSize int, fileSize int64) error {
+func upload(file multipart.File, db *gorm.DB, chunkSize int64, batchSize int, fileSize int64) error {
 	buffer := make([]byte, chunkSize) // Buffer to hold large chunks of the CSV file
 	totalRead := int64(0)
 	batch := make([]models.UserDetails, 0, batchSize)
@@ -134,8 +134,7 @@ func uploadFileToDB(file multipart.File, db *gorm.DB, chunkSize int64, batchSize
 			}
 		}
 
-		// Handle the case where we've reached the end of the buffer but there may be leftover data
-		// If the buffer isn't perfectly aligned to full records, we need to process the leftovers
+		//handle when we reach end of buffer
 		if n < len(buffer) {
 			leftover := buffer[n:]
 			if len(leftover) > 0 {

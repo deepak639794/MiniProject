@@ -33,9 +33,10 @@ func main() {
 	r := gin.Default()
 	r.MaxMultipartMemory = 30 << 30 // 30 GB
 
-	r.Use(middleware.LogRequestResponse())
+	r.Use(middleware.LogRequestResponse()) //Middleware in Gin is a function that runs before and after
 	logReader = utils.NewLogReader()
 	routes.SetupRoutes(r, logReader, db)
 
 	r.Run(":8081")
+
 }

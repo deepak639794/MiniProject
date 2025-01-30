@@ -80,9 +80,10 @@ func (w *CustomResponseWriter) Write(p []byte) (int, error) {
 	return w.ResponseWriter.Write(p)
 
 }
+
 func writeLogToFile(logEntry models.ApiLog) {
 	// Open the log file in read-write mode, or create it if it doesn't exist
-	logFile, err := os.OpenFile("C:/Users/deepak.ag/Desktop/MiniProject1/mymodule/logs/api_logs.json", os.O_RDWR|os.O_CREATE, 0644)
+	logFile, err := os.OpenFile("mymodule/logs/api_logs.json", os.O_RDWR|os.O_CREATE, 0644)
 	if err != nil {
 		log.Fatalf("Error opening log file11: %v", err)
 	}
@@ -125,7 +126,7 @@ func writeLogToFile(logEntry models.ApiLog) {
 
 func wrapLogsInArray() {
 	// Read the existing logs from the file
-	logFile, err := os.OpenFile("C:/Users/deepak.ag/Desktop/MiniProject1/mymodule/logs/api_logs.json", os.O_RDWR, 0644)
+	logFile, err := os.OpenFile("mymodule/logs/api_logs.json", os.O_RDWR, 0644)
 	if err != nil {
 		log.Fatalf("Error opening log file1: %v", err)
 	}
